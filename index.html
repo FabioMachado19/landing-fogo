@@ -1,157 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fuego Casero – Acenda sua chama com facilidade</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fffdf9;
-      color: #2c2c2c;
-    }
-    .hero {
-      background-color: #fbe9dc;
-      background-image: url('https://images.unsplash.com/photo-1613077472683-07ebaf3eec1c');
-      background-size: cover;
-      background-position: center;
-      color: #1a1a1a;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      letter-spacing: -1px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 25px;
-    }
-    .cta {
-      background-color: #e63946;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-      font-size: 1em;
-      display: inline-block;
-    }
-    .section {
-      max-width: 960px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-    .section h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .benefits, .testimonials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-    }
-    .benefit, .testimonial {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      flex: 1 1 280px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-    .benefit img {
-      width: 50px;
-      margin-bottom: 10px;
-    }
-    .testimonial strong {
-      display: block;
-      margin-bottom: 8px;
-    }
-    .footer {
-      text-align: center;
-      margin: 50px 0 20px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuego Casero - Pasta Sustentável para Acender Fogo</title>
+    <meta name="description" content="Fuego Casero é uma pasta sustentável, reutilizável e sem fumaça para acender fogo em lareiras, churrasqueiras, fogões a lenha e carvão.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <section class="hero">
-    <h1>Fuego Casero</h1>
-    <p>Acenda sua lareira, churrasqueira ou fogão à lenha com praticidade e sem fumaça.</p>
-    <a class="cta" href="#">Compre com 20% OFF</a>
-  
-</section>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>🔥 Fuego Casero</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produto" class="nav-link">Produto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#beneficios" class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#como-usar" class="nav-link">Como Usar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <a href="#contato" class="cta-button">Comprar Agora</a>
+            </div>
+        </nav>
+    </header>
 
-  <section class="section">
-    <h2>Conheça o Fuego Casero</h2>
-    <div style="text-align: center;">
-      <img src="https://via.placeholder.com/400x300?text=Imagem+do+Produto" alt="Produto Fuego Casero" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fuego Casero</h1>
+                <h2 class="hero-subtitle">A Revolução Sustentável para Acender Fogo</h2>
+                <p class="hero-description">Pasta ecológica, reutilizável e sem fumaça para todas as suas necessidades de fogo</p>
+                <div class="hero-buttons">
+                    <a href="#produto" class="btn btn-primary">Descubra Mais</a>
+                    <a href="#como-usar" class="btn btn-secondary">Como Usar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-lareira.jpg" alt="Lareira acesa com Fuego Casero">
+            </div>
+        </div>
+    </section>
 
-  <section class="section">
+    <!-- Produto Section -->
+    <section id="produto" class="produto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que é o Fuego Casero?</h2>
+                <p class="section-subtitle">Uma inovação sustentável para acender fogo de forma fácil e ecológica</p>
+            </div>
+            <div class="produto-content">
+                <div class="produto-image">
+                    <div class="produto-placeholder">
+                        <i class="fas fa-fire"></i>
+                        <p>Fuego Casero<br>Pasta Sustentável</p>
+                    </div>
+                </div>
+                <div class="produto-info">
+                    <h3>Pasta Revolucionária para Acender Fogo</h3>
+                    <p>O Fuego Casero é uma pasta inovadora desenvolvida com ingredientes 100% naturais e sustentáveis. Nossa fórmula exclusiva permite acender fogo de forma rápida e eficiente, sem produzir cheiro desagradável ou fumaça excessiva.</p>
+                    <div class="produto-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-recycle"></i>
+                            <span>Reutilizável</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-ban"></i>
+                            <span>Sem Cheiro</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wind"></i>
+                            <span>Sem Fumaça</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Por que escolher Fuego Casero?</h2>
-    <div class="benefits">
-      <div class="benefit">
-        <img src="https://img.icons8.com/ios-filled/50/fire-element.png" alt="Fácil de usar">
-        <p><strong>Fácil de Usar</strong> Basta aplicar e acender – sem esforço ou sujeira.</p>
-      </div>
-      <div class="benefit">
-        <img src="https://img.icons8.com/ios-filled/50/leaf.png" alt="Sustentável">
-        <p><strong>Sustentável</strong> Ingredientes naturais e sem poluentes tóxicos.</p>
-      </div>
-      <div class="benefit">
-        <img src="https://img.icons8.com/ios-filled/50/no-smoking.png" alt="Sem fumaça">
-        <p><strong>Sem Fumaça</strong> Queima limpa e segura para ambientes internos e externos.</p>
-      </div>
-    </div>
-  
-</section>
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por Que Escolher Fuego Casero?</h2>
+                <p class="section-subtitle">Benefícios que fazem a diferença para você e o meio ambiente</p>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>100% Sustentável</h3>
+                    <p>Feito com ingredientes naturais e biodegradáveis, respeitando o meio ambiente.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <h3>Reutilizável</h3>
+                    <p>Embalagem reutilizável que pode ser reaproveitada para outros fins domésticos.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-nose"></i>
+                    </div>
+                    <h3>Sem Cheiro</h3>
+                    <p>Fórmula especial que não produz odores desagradáveis durante o uso.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Sem Fumaça</h3>
+                    <p>Queima limpa, produzindo mínima fumaça e mantendo o ambiente agradável.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fácil de Usar</h3>
+                    <p>Aplicação simples e rápida, ideal para qualquer pessoa usar.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Reciclável</h3>
+                    <p>Embalagem 100% reciclável, contribuindo para um futuro mais sustentável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="section">
-    <h2>Conheça o Fuego Casero</h2>
-    <div style="text-align: center;">
-      <img src="https://via.placeholder.com/400x300?text=Imagem+do+Produto" alt="Produto Fuego Casero" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    </div>
-  </section>
+    <!-- Aplicações Section -->
+    <section id="aplicacoes" class="aplicacoes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Onde Usar o Fuego Casero</h2>
+                <p class="section-subtitle">Versatilidade para todas as suas necessidades de fogo</p>
+            </div>
+            <div class="aplicacoes-grid">
+                <div class="aplicacao-card">
+                    <img src="images/hero-lareira.jpg" alt="Lareira">
+                    <div class="card-overlay">
+                        <h3>Lareira</h3>
+                        <p>Perfeito para acender lareiras domésticas e criar um ambiente aconchegante</p>
+                    </div>
+                </div>
+                <div class="aplicacao-card">
+                    <img src="images/churrasqueira.jpg" alt="Churrasqueira">
+                    <div class="card-overlay">
+                        <h3>Churrasqueira</h3>
+                        <p>Ideal para churrascos, garantindo fogo rápido e uniforme</p>
+                    </div>
+                </div>
+                <div class="aplicacao-card">
+                    <img src="images/fogao-lenha.jpg" alt="Fogão a Lenha">
+                    <div class="card-overlay">
+                        <h3>Fogão a Lenha</h3>
+                        <p>Excelente para fogões a lenha tradicionais e cozinha rural</p>
+                    </div>
+                </div>
+                <div class="aplicacao-card">
+                    <img src="images/carvao.jpg" alt="Carvão">
+                    <div class="card-overlay">
+                        <h3>Carvão</h3>
+                        <p>Facilita o acendimento de carvão para qualquer ocasião</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="section">
+    <!-- Como Usar Section -->
+    <section id="como-usar" class="como-usar">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Usar o Fuego Casero</h2>
+                <p class="section-subtitle">Simples, rápido e eficiente em apenas 3 passos</p>
+            </div>
+            <div class="passos-container">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <div class="passo-content">
+                        <h3>Aplique a Pasta</h3>
+                        <p>Aplique uma pequena quantidade de Fuego Casero na lenha, carvão ou material combustível.</p>
+                    </div>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <div class="passo-content">
+                        <h3>Acenda o Fogo</h3>
+                        <p>Use um fósforo ou isqueiro para acender a pasta. O fogo se espalhará rapidamente.</p>
+                    </div>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <div class="passo-content">
+                        <h3>Aproveite</h3>
+                        <p>Desfrute de um fogo limpo, sem cheiro e sem fumaça excessiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>O que nossos clientes dizem</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <strong>Carlos S.</strong>
-        <p>Ficou muito mais prático acender o fogo aqui em casa. Produto nota 10!</p>
-      </div>
-      <div class="testimonial">
-        <strong>Jéssica M.</strong>
-        <p>Chega de papel e bagunça. O Fuego Casero virou meu queridinho da churrasqueira.</p>
-      </div>
-      <div class="testimonial">
-        <strong>Roberto A.</strong>
-        <p>Não deixa cheiro, não solta fumaça, e funciona até com lenha úmida. Recomendo!</p>
-      </div>
-    </div>
-  </section>
+    <!-- Sustentabilidade Section -->
+    <section id="sustentabilidade" class="sustentabilidade">
+        <div class="container">
+            <div class="sustentabilidade-content">
+                <div class="sustentabilidade-text">
+                    <h2>Compromisso com o Meio Ambiente</h2>
+                    <p>Na Fuego Casero, acreditamos que é possível ter praticidade sem comprometer o meio ambiente. Nosso produto é desenvolvido com ingredientes naturais e biodegradáveis, em embalagens reutilizáveis e recicláveis.</p>
+                    <div class="sustentabilidade-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Natural</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0%</span>
+                            <span class="stat-label">Químicos Tóxicos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Reciclável</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sustentabilidade-images">
+                    <img src="images/produto-ecologico.webp" alt="Produtos Ecológicos">
+                    <img src="images/embalagem-sustentavel.jpg" alt="Embalagem Sustentável">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-  <section class="section" style="text-align: center; background-color: #ffe8e5; padding: 40px 20px; border-radius: 12px;">
-    <h2>Pronto para acender com praticidade?</h2>
-    <p>Fale conosco no WhatsApp e peça seu Fuego Casero agora mesmo!</p>
-    <a href="https://wa.me/5599999999999" target="_blank" style="background-color: #25D366; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 10px; font-size: 1.1em; display: inline-block; margin-top: 15px;">
-      📱 Falar no WhatsApp
-    </a>
-  </section>
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Pronto para experimentar o Fuego Casero?</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@fuegocasero.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 9999-9999</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP - Brasil</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contato-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <div class="footer">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🔥 Fuego Casero</h3>
+                    <p>A pasta sustentável que revoluciona a forma de acender fogo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#produto">Produto</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#como-usar">Como Usar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>contato@fuegocasero.com</p>
+                    <p>(11) 9999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fuego Casero. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    © 2025 Fuego Casero. Todos os direitos reservados.
-  </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -363,5 +363,46 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+  (function () {
+    const form = document.querySelector('form[name="contato"]');
+    if (!form) return;
+
+    function encode(data) {
+      return Object.keys(data)
+        .map(k => encodeURIComponent(k) + "=" + encodeURIComponent(data[k]))
+        .join("&");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        "form-name": form.getAttribute("name"),           // precisa bater com name="contato"
+        nome: form.querySelector('[name="nome"]').value,
+        email: form.querySelector('[name="email"]').value,
+        mensagem: form.querySelector('[name="mensagem"]').value,
+        "bot-field": form.querySelector('[name="bot-field"]')?.value || ""
+      };
+
+      try {
+        const resp = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode(data)
+        });
+
+        if (resp.ok) {
+          window.location = "/obrigado/";   // troque se preferir outra página
+        } else {
+          alert("Falha ao enviar o formulário. Tente novamente.");
+        }
+      } catch (err) {
+        alert("Erro de rede ao enviar o formulário.");
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>

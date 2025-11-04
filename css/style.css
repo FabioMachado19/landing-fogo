@@ -485,6 +485,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 4rem;
 }
 
+.contato-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centro horizontal */
+  text-align: center;  /* texto centralizado */
+}
+
+
 .contato-info h3 {
     font-size: 1.8rem;
     margin-bottom: 2rem;

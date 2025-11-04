@@ -720,4 +720,27 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     transform: translateY(0);
 }
+.btn-whatsapp-fixed {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp-fixed:hover {
+  background-color: #1fb75d;
+}
+
+.btn-whatsapp-fixed img {
+  width: 35px;
+  height: 35px;
+}
 

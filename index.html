@@ -288,7 +288,36 @@
                         <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <form class="contato-form" action="mailto:vendas@fuegocasero.com" method="POST" enctype="text/plain">
+                
+                <!-- Trecho de Forms Novo-->
+                <form class="contato-form" 
+                      name="contato" 
+                      method="POST" 
+                      data-netlify="true" 
+                      netlify-honeypot="bot-field"
+                      action="/obrigado/">
+
+                  <input type="hidden" name="form-name" value="contato" />
+                  <p class="hidden">
+                    <input name="bot-field" />
+                  </p>
+    
+                  <div class="form-group">
+                      <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                  </div>
+    
+                  <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                  </div>
+    
+                  <div class="form-group">
+                      <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                  </div>
+                
+                  <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+
+               <!-- <form class="contato-form" action="mailto:vendas@fuegocasero.com" method="POST" enctype="text/plain">
                     <div class="form-group">
                         <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
                     </div>
@@ -299,7 +328,7 @@
                         <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
+                </form>-->
             </div>
         </div>
     </section>
